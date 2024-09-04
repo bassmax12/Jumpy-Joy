@@ -6,49 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumpy Joy</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Guttman+Yad&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap'); /* Use Assistant font */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* Font Awesome icons */
 
-        body, html {
-            height: 100%;
+        /* Reset margin and padding */
+        * {
             margin: 0;
             padding: 0;
-            overflow-y: auto; /* Allow vertical scrolling */
+            box-sizing: border-box;
         }
 
+        /* Mobile-first design */
         body {
+            font-family: 'Assistant', sans-serif; /* More accessible font */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
+            padding: 10px;
             background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg');
-            background-size: cover; /* Ensure the background covers the entire screen */
+            background-size: contain; /* Make sure the entire image is shown */
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             text-align: center;
             color: #333;
-            direction: rtl;
-        }
-
-        .container {
-            max-width: 1200px;
-            padding: 50px 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
-            width: 100%;
-            margin: 0 auto;
+            overflow-y: auto;
         }
 
         h1 {
-            font-family: 'Guttman Yad', sans-serif;
-            font-size: 48px;
-            color: #ff0000; /* Red */
+            font-size: calc(1.5rem + 3vw); /* Fluid typography */
+            color: #ff0000;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 36px;
+            font-size: calc(1.2rem + 2vw); /* Fluid typography */
             color: #333;
             margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .button {
@@ -56,7 +63,7 @@
             padding: 15px 30px;
             margin: 10px;
             border-radius: 50px;
-            font-size: 24px;
+            font-size: calc(1rem + 1vw); /* Fluid typography for buttons */
             color: #fff;
             text-decoration: none;
             background-color: #007bff;
@@ -66,165 +73,77 @@
 
         .button:hover {
             background-color: #0056b3;
-            transform: scale(1.05); /* Slight enlargement */
+            transform: scale(1.05);
         }
 
         .services {
-            margin: 50px 0;
-            text-align: justify; /* Justify all text */
-            font-size: 20px;
-            max-width: 800px; /* Limit width for better readability */
-            margin-left: auto;
-            margin-right: auto;
+            margin: 40px 0;
+            text-align: justify;
+            font-size: calc(1rem + 0.5vw); /* Fluid typography for services */
+            max-width: 800px;
         }
 
         .services h2 {
-            text-align: center; /* Center-align the title */
-        }
-
-        .services ul {
-            list-style: none; /* Remove bullet points */
-            padding: 0;
-        }
-
-        .services ul li {
-            margin-bottom: 15px;
+            text-align: center;
         }
 
         .product-list {
-            margin: 40px auto; /* Center the product list */
-            text-align: center; /* Center-align text */
-            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product-list p {
+            flex-basis: 30%;
+            margin-bottom: 20px;
         }
 
         footer {
             margin-top: 50px;
-            padding: 30px 20px;
-            background-color: transparent;
-            color: #000; /* Black text for visibility */
+            padding: 20px;
+            width: 100%;
             text-align: center;
+            font-size: calc(0.8rem + 0.5vw); /* Fluid typography for footer */
         }
 
-        footer p {
+        footer .contact-info p {
             margin: 10px 0;
-            font-size: 22px; /* Increased font size */
-            text-align: justify; /* Justify text in footer */
-        }
-
-        footer .contact-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: justify; /* Justify text */
-        }
-
-        footer .contact-info i {
-            margin-right: 10px;
         }
 
         footer a {
-            color: inherit; /* Inherit text color */
+            color: inherit;
             text-decoration: none;
         }
 
         footer a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline;
         }
 
-        /* Icons for contact details */
-        .fa-phone::before {
-            content: "📞";
+        /* Icons styling */
+        .contact-info i {
+            margin-right: 8px;
+            color: #ff5733;
         }
 
-        .fa-envelope::before {
-            content: "✉️";
-        }
-
-        .fa-clock::before {
-            content: "⏰";
-        }
-
-        .fa-map-marker::before {
-            content: "📍";
-        }
-
-        .fa-location-arrow::before {
-            content: "🧭";
-        }
-
-        /* Responsive styling */
-        @media (max-width: 1024px) {
-            h1 {
-                font-size: 40px;
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .product-list p {
+                flex-basis: 45%;
             }
 
-            h2 {
-                font-size: 28px;
-            }
-
-            .button {
-                font-size: 20px;
-                padding: 12px 24px;
-            }
-
-            .container {
-                padding: 40px 15px;
-            }
-
-            .services {
-                font-size: 18px;
+            footer {
+                padding: 30px;
             }
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 32px;
+        @media (min-width: 1024px) {
+            .product-list p {
+                flex-basis: 30%;
             }
 
-            h2 {
-                font-size: 24px;
-            }
-
-            .button {
-                font-size: 18px;
-                padding: 10px 20px;
-            }
-
-            .container {
-                padding: 30px 10px;
-            }
-
-            .services {
-                font-size: 18px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .button {
-                font-size: 16px;
-                padding: 8px 16px;
-            }
-
-            .container {
-                padding: 20px 8px;
-            }
-
-            .services {
-                font-size: 16px;
-            }
-
-            /* Ensure buttons are more accessible */
-            .button {
-                width: 90%; /* Make buttons wider on mobile */
+            footer {
+                padding: 40px;
             }
         }
     </style>
@@ -253,11 +172,11 @@
         <footer id="contact">
             <div class="contact-info">
                 <h2>צרו קשר</h2>
-                <p><i class="fa fa-phone"></i> <a href="tel:+972507712973">שיר - טלפון: 050-7712973</a></p>
-                <p><i class="fa fa-envelope"></i> <a href="mailto:shirbibas1234@gmail.com">אימייל: shirbibas1234@gmail.com</a></p>
-                <p><i class="fa fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
-                <p><i class="fa fa-location-arrow"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">הגעה</a></p>
-                <p><i class="fa fa-map-marker"></i> מודיעין והסביבה</p>
+                <p><i class="fas fa-phone-alt"></i> טל': <a href="tel:+972507712973">שיר - 0507712973</a></p>
+                <p><i class="fas fa-envelope"></i> אימייל: <a href="mailto:shirbibas1234@gmail.com">shirbibas1234@gmail.com</a></p>
+                <p><i class="fas fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
+                <p><i class="fas fa-map-marker-alt"></i> אזור פעילות: מודיעין והסביבה</p>
+                <p><i class="fas fa-location-arrow"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">נווט לאיסוף</a></p>
             </div>
         </footer>
     </div>
