@@ -32,7 +32,7 @@
             max-width: 1200px;
             padding: 50px 20px;
             background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
-            width: 100%; /* Fit container to the screen width */
+            width: 100%;
             margin: 0 auto;
         }
 
@@ -68,8 +68,15 @@
 
         .services {
             margin: 50px 0;
-            text-align: right;
+            text-align: center; /* Center-align text */
             font-size: 20px;
+            max-width: 800px; /* Limit width for better readability */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services ul {
+            text-align: justify; /* Justify text on both sides */
         }
 
         footer {
@@ -94,6 +101,15 @@
 
         footer .contact-info i {
             margin-right: 10px;
+        }
+
+        footer a {
+            color: inherit; /* Inherit text color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
 
         /* Icons for contact details */
@@ -130,6 +146,10 @@
 
             .container {
                 padding: 40px 15px;
+            }
+
+            .services {
+                font-size: 18px;
             }
         }
 
@@ -186,7 +206,7 @@
         <h1>ברוכים הבאים ל-Jumpy Joy!</h1>
         <h2>מתנפחים ליום הולדת שמח במיוחד!</h2>
 
-        <a href="#services" class="button">הזמינו עכשיו!</a>
+        <a href="tel:+972507932463" class="button">הזמינו עכשיו!</a>
         <a href="#contact" class="button" style="background-color: #ff5733;">צפו במוצרים שלנו!</a>
 
         <div id="services" class="services">
@@ -204,10 +224,10 @@
         <footer id="contact">
             <div class="contact-info">
                 <h2>צרו קשר</h2>
-                <p><i class="fa fa-phone"></i> טלפון: 050-7932463</p>
-                <p><i class="fa fa-envelope"></i> אימייל: shirbibas1234@gmail.com</p>
+                <p><i class="fa fa-phone"></i> <a href="tel:+972507932463">טלפון: 050-7932463</a></p>
+                <p><i class="fa fa-envelope"></i> <a href="mailto:shirbibas1234@gmail.com">אימייל: shirbibas1234@gmail.com</a></p>
                 <p><i class="fa fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
-                <p><i class="fa fa-map-marker"></i> אזור שירות: מודיעין והסביבה</p>
+                <p><i class="fa fa-map-marker"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">אזור שירות: חיים הרצוג 4, מודיעין מכבים רעות, ישראל</a></p>
             </div>
         </footer>
     </div>
