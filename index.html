@@ -26,8 +26,8 @@
             min-height: 100vh;
             padding: 10px;
             background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg');
-            background-size: 100% auto; /* Stretch horizontally but keep vertical aspect */
-            background-position: center top; /* Keep image aligned at the top */
+            background-size: 100vw 100vh; /* Ensure the background fits the viewport size */
+            background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             text-align: center;
@@ -37,7 +37,7 @@
 
         @media (max-width: 768px) {
             body {
-                background-size: contain; /* For smaller screens, contain the image */
+                background-size: contain; /* For smaller screens, contain the image without cuts */
             }
         }
 
