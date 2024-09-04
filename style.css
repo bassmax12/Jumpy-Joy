@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('path_to_your_logo'); /* שים את הנתיב של קובץ הלוגו שלך כאן */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* לבן עם מעט שקיפות */
+}
+
+h1 {
+    font-size: 48px;
+    color: #ff0000; /* אדום */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff; /* כחול בהיר */
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #0056b3; /* גוון כהה יותר של כחול */
+    transform: scale(1.05); /* הגדלה קלה */
+}
+
+.services {
+    margin: 50px 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    margin: 5px 0;
+}
