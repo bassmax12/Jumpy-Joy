@@ -17,7 +17,7 @@
             align-items: center;
             min-height: 100vh;
             background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg');
-            background-size: contain; /* Adjusting the background size to fit the screen */
+            background-size: contain;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -69,12 +69,26 @@
 
         footer {
             margin-top: 50px;
-            padding: 20px;
-            background-color: #f1f1f1;
+            padding: 30px 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+            color: #fff; /* White text */
+            text-align: center;
         }
 
         footer p {
-            margin: 5px 0;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        footer .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .contact-info i {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -100,11 +114,13 @@
         </div>
 
         <footer id="contact">
-            <h2>צרו קשר</h2>
-            <p>טלפון: 050-XXXXXXX</p>
-            <p>אימייל: info@jumpyjoy.co.il</p>
-            <p>שעות פעילות: 09:00 - 21:00</p>
-            <p>אזור שירות: מודיעין והסביבה</p>
+            <div class="contact-info">
+                <h2>צרו קשר</h2>
+                <p><i class="fa fa-phone"></i> טלפון: 050-7932463</p>
+                <p><i class="fa fa-envelope"></i> אימייל: shirbibas1234@gmail.com</p>
+                <p><i class="fa fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
+                <p><i class="fa fa-map-marker"></i> אזור שירות: מודיעין והסביבה</p>
+            </div>
         </footer>
     </div>
 
