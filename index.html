@@ -127,6 +127,11 @@
             color: #ff5733;
         }
 
+        /* Remove the icon from the activity area and keep only text */
+        .contact-info p:last-of-type i {
+            display: none;
+        }
+
         /* Responsive adjustments */
         @media (min-width: 768px) {
             .product-list p {
@@ -173,11 +178,11 @@
         <footer id="contact">
             <div class="contact-info">
                 <h2>צרו קשר</h2>
-                <p><i class="fas fa-phone-alt"></i> טל': <a href="tel:+972507712973">שיר - 0507712973</a></p>
-                <p><i class="fas fa-envelope"></i> אימייל: <a href="mailto:shirbibas1234@gmail.com">shirbibas1234@gmail.com</a></p>
-                <p><i class="fas fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
-                <p><i class="fas fa-map-marker-alt"></i> אזור פעילות: מודיעין והסביבה</p>
-                <p><i class="fas fa-location-arrow"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">נווט לאיסוף</a></p>
+                <p><i class="fas fa-phone-alt"></i><a href="tel:+972507712973">שיר - 0507712973</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:shirbibas1234@gmail.com">shirbibas1234@gmail.com</a></p>
+                <p><i class="fas fa-clock"></i>09:00 - 21:00</p>
+                <p><i class="fas fa-location-arrow"></i><a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">לאיסוף</a></p>
+                <p>אזור פעילות: מודיעין והסביבה</p>
             </div>
         </footer>
     </div>
