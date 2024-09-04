@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumpy Joy</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Guttman+Yad&display=swap');
+
         body, html {
             height: 100%;
             margin: 0;
@@ -37,6 +39,7 @@
         }
 
         h1 {
+            font-family: 'Guttman Yad', sans-serif;
             font-size: 48px;
             color: #ff0000; /* Red */
             margin-bottom: 20px;
@@ -68,21 +71,30 @@
 
         .services {
             margin: 50px 0;
-            text-align: center; /* Center-align text */
+            text-align: justify; /* Justify all text */
             font-size: 20px;
             max-width: 800px; /* Limit width for better readability */
             margin-left: auto;
             margin-right: auto;
         }
 
+        .services h2 {
+            text-align: center; /* Center-align the title */
+        }
+
         .services ul {
-            text-align: justify; /* Justify text on both sides */
             list-style: none; /* Remove bullet points */
             padding: 0;
         }
 
         .services ul li {
             margin-bottom: 15px;
+        }
+
+        .product-list {
+            margin: 40px auto; /* Center the product list */
+            text-align: center; /* Center-align text */
+            font-size: 20px;
         }
 
         footer {
@@ -96,6 +108,7 @@
         footer p {
             margin: 10px 0;
             font-size: 18px;
+            text-align: justify; /* Justify text in footer */
         }
 
         footer .contact-info {
@@ -103,6 +116,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            text-align: justify; /* Justify text */
         }
 
         footer .contact-info i {
@@ -133,6 +147,10 @@
 
         .fa-map-marker::before {
             content: "📍";
+        }
+
+        .fa-location-arrow::before {
+            content: "🧭";
         }
 
         /* Responsive styling */
@@ -203,6 +221,11 @@
             .services {
                 font-size: 16px;
             }
+
+            /* Ensure buttons are more accessible */
+            .button {
+                width: 90%; /* Make buttons wider on mobile */
+            }
         }
     </style>
 </head>
@@ -212,28 +235,29 @@
         <h1>ברוכים הבאים ל-Jumpy Joy!</h1>
         <h2>מתנפחים ליום הולדת שמח במיוחד!</h2>
 
-        <a href="tel:+972507932463" class="button">הזמינו עכשיו!</a>
+        <a href="tel:+972507712973" class="button">הזמינו עכשיו!</a>
         <a href="#contact" class="button" style="background-color: #ff5733;">צפו במוצרים שלנו!</a>
 
         <div id="services" class="services">
             <h2>המוצרים והשירותים שלנו</h2>
-            <ul>
-                <li>מתנפח מים עם מגלשה</li>
-                <li>מתנפח טירה גדול</li>
-                <li>מתנפח טירה קטן</li>
-                <li>משטח גלישה על סבון/מים</li>
-                <li>משטח מזרקה לפעוטות</li>
-                <li>שולחנות וכיסאות לאירועים</li>
-            </ul>
+            <div class="product-list">
+                <p>מתנפח מים עם מגלשה</p>
+                <p>מתנפח טירה גדול</p>
+                <p>מתנפח טירה קטן</p>
+                <p>משטח גלישה על סבון/מים</p>
+                <p>משטח מזרקה לפעוטות</p>
+                <p>שולחנות וכיסאות לאירועים</p>
+            </div>
         </div>
 
         <footer id="contact">
             <div class="contact-info">
                 <h2>צרו קשר</h2>
-                <p><i class="fa fa-phone"></i> <a href="tel:+972507932463">טלפון: 050-7932463</a></p>
+                <p><i class="fa fa-phone"></i> <a href="tel:+972507712973">שיר - טלפון: 050-7712973</a></p>
                 <p><i class="fa fa-envelope"></i> <a href="mailto:shirbibas1234@gmail.com">אימייל: shirbibas1234@gmail.com</a></p>
                 <p><i class="fa fa-clock"></i> שעות יצירת קשר: 09:00 - 21:00</p>
-                <p><i class="fa fa-map-marker"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">אזור שירות: חיים הרצוג 4, מודיעין מכבים רעות, ישראל</a></p>
+                <p><i class="fa fa-location-arrow"></i> <a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">הגעה</a></p>
+                <p><i class="fa fa-map-marker"></i> מודיעין והסביבה</p>
             </div>
         </footer>
     </div>
