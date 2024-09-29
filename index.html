@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -6,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumpy Joy</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap'); /* Use Assistant font */
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* Font Awesome icons */
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-        /* Reset margin and padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Mobile-first design */
         body {
-            font-family: 'Assistant', sans-serif; /* More accessible font */
+            font-family: 'Assistant', sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,7 +23,7 @@
             min-height: 100vh;
             padding: 10px;
             background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg');
-            background-size: 100vw 100vh; /* Ensure the background fits the viewport size */
+            background-size: 100vw 100vh;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -36,13 +33,13 @@
         }
 
         h1 {
-            font-size: calc(2rem + 2vw); /* Optimal fluid typography for headers */
+            font-size: calc(2rem + 2vw);
             color: #ff0000;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: calc(1.5rem + 1.5vw); /* Optimal fluid typography for sub-headers */
+            font-size: calc(1.5rem + 1.5vw);
             color: #333;
             margin-bottom: 30px;
         }
@@ -63,7 +60,7 @@
             padding: 15px 30px;
             margin: 10px;
             border-radius: 50px;
-            font-size: calc(1rem + 1vw); /* Fluid typography for buttons */
+            font-size: calc(1rem + 1vw);
             color: #fff;
             text-decoration: none;
             background-color: #007bff;
@@ -76,28 +73,30 @@
             transform: scale(1.05);
         }
 
-        .services {
+        .product-list {
             margin: 40px 0;
-            text-align: justify;
-            font-size: calc(1rem + 0.75vw); /* Fluid typography for services */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust the spacing */
+            font-size: calc(1rem + 0.75vw);
             max-width: 800px;
         }
 
-        .services h2 {
-            text-align: center;
-        }
-
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
         .product-list p {
-            flex-basis: 30%;
+            margin-bottom: 10px; /* Reduced margin */
+            width: 48%; /* Two items per row */
+            text-align: right; /* Align text to the right for better appearance in RTL */
+            font-size: calc(1rem + 0.5vw);
+            word-wrap: break-word; /* Ensures long words break properly */
+        }
+
+        .product-list .popcorn-icon {
+            filter: grayscale(100%); /* Converts the emoji to black and white */
+        }
+
+        .info {
             margin-bottom: 20px;
-            font-size: calc(1rem + 0.5vw); /* Ensure readability of product list on all screens */
+            font-size: calc(1rem + 0.75vw);
         }
 
         footer {
@@ -105,37 +104,12 @@
             padding: 20px;
             width: 100%;
             text-align: center;
-            font-size: calc(0.9rem + 0.5vw); /* Fluid typography for footer */
+            font-size: calc(0.9rem + 0.5vw);
         }
 
-        footer .contact-info p {
-            margin: 10px 0;
-        }
-
-        footer a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Icons styling */
-        .contact-info i {
-            margin-right: 8px;
-            color: #ff5733;
-        }
-
-        /* Remove the icon from the activity area and keep only text */
-        .contact-info p:last-of-type i {
-            display: none;
-        }
-
-        /* Responsive adjustments */
         @media (min-width: 768px) {
             .product-list p {
-                flex-basis: 45%;
+                width: 45%; /* Adjust width for medium screens */
             }
 
             footer {
@@ -145,7 +119,7 @@
 
         @media (min-width: 1024px) {
             .product-list p {
-                flex-basis: 30%;
+                width: 30%; /* Three items per row for large screens */
             }
 
             footer {
@@ -158,33 +132,28 @@
 
     <div class="container">
         <h1>ברוכים הבאים ל-Jumpy Joy!</h1>
-        <h2>מתנפחים ליום הולדת שמח במיוחד!</h2>
+        <h2>אטרקציה ליום הולדת שמח במיוחד!</h2>
 
-        <a href="tel:+972507712973" class="button">הזמינו עכשיו!</a>
-        <a href="#contact" class="button" style="background-color: #ff5733;">צפו במוצרים שלנו!</a>
-
-        <div id="services" class="services">
-            <h2>המוצרים והשירותים שלנו</h2>
-            <div class="product-list">
-                <p>מתנפח מים עם מגלשה</p>
-                <p>מתנפח טירה גדול</p>
-                <p>מתנפח טירה קטן</p>
-                <p>משטח גלישה על סבון/מים</p>
-                <p>משטח מזרקה לפעוטות</p>
-                <p>שולחנות וכיסאות לאירועים</p>
-            </div>
+        <div class="product-list">
+            <p><i class="fas fa-tint"></i> מתנפח מים עם מגלשה</p>
+            <p><i class="fas fa-chess-rook"></i> מתנפח טירה גדול</p>
+            <p><i class="fas fa-wind"></i> משטח גלישה על סבון/מים</p>
+            <p><i class="fas fa-water"></i> משטח מזרקה לפעוטות</p>
+            <p><i class="fas fa-chair"></i> שולחנות וכיסאות לאירועים</p>
+            <p><i class="fas fa-bolt"></i> השכרת גנרטור</p>
+            <p><i class="fas fa-candy-cane"></i> מכונת סוכר</p>
+            <p><span class="popcorn-icon">🍿</span> מכונת פופקורן</p>
+            <p><i class="fas fa-parachute-box"></i> מצנח פעילות</p>
         </div>
 
-        <footer id="contact">
-            <div class="contact-info">
-                <h2>צרו קשר</h2>
-                <p><i class="fas fa-phone-alt"></i><a href="tel:+972507712973">שיר - 0507712973</a></p>
-                <p><i class="fas fa-envelope"></i><a href="mailto:shirbibas1234@gmail.com">shirbibas1234@gmail.com</a></p>
-                <p><i class="fas fa-clock"></i>09:00 - 21:00</p>
-                <p><i class="fas fa-location-arrow"></i><a href="https://maps.google.com/?q=חיים הרצוג 4 מודיעין מכבים רעות ישראל" target="_blank">לאיסוף</a></p>
-                <p>אזור פעילות: מודיעין והסביבה</p>
-            </div>
-        </footer>
+        <!-- Hours and Area Information -->
+        <div class="info">
+            <p><i class="fas fa-clock"></i> שעות פעילות: 09:00 - 21:00</p>
+            <p><i class="fas fa-map-marker-alt"></i> אזור פעילות: מודיעין והסביבה</p>
+        </div>
+
+        <a href="#pricing" class="button" style="background-color: #28a745;">מחירון</a>
+        <a href="#contact" class="button" style="background-color: #ff5733;">הזמינו עכשיו!</a>
     </div>
 
 </body>
