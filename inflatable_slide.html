@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מתנפח מים מגלשה</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg'); /* שימוש בתמונה כרקע */
+            background-size: cover; /* מכסה את כל המסך */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95); /* שקיפות עדינה */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ff5733;
+            font-size: calc(2rem + 1vw);
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .product-card .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+            text-align: justify;
+            text-align-last: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            text-align: justify;
+            padding-right: 20px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+
+        /* Image and Video Styling */
+        .image-card, .video-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            height: 500px; /* ריבוע בגודל אחיד */
+        }
+
+        .image-card img, .video-card iframe {
+            width: 100%;
+            height: 100%; /* מוודא שהתמונה והסרטון יתפסו את כל הגובה והרוחב */
+            object-fit: cover; /* מוודא שהתמונה והסרטון ישמרו על הפרופורציות שלהם */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* אנימציה בהזזת הכפתור */
+        }
+
+        .instructions {
+            background-color: #e3f2fd; /* צבע רקע עדין */
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            max-width: 600px; /* רוחב כרטיסייה */
+            margin: 0 auto; /* מרכז את הכרטיסייה */
+        }
+
+        .instructions h2 {
+            color: #007bff;
+            font-size: 1.8rem; /* כותרות גדולות יותר */
+            font-weight: bold;
+        }
+
+        .instructions ul {
+            list-style-type: disc;
+            padding-right: 20px;
+        }
+
+        .instructions ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px; /* מרווחים גדולים יותר בין הפריטים */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>מתנפח מים מגלשה</h1>
+
+        <div class="product-card">
+            <p class="title">
+                מתנפח מים עם מגלשה – חוויה מושלמת לאירועים
+            </p>
+            <ul>
+                <li>מתנפח המים עם מגלשה שלנו מציע חוויה מהנה ובטוחה לילדים עד גיל 10.</li>
+                <li>הוא מותאם במיוחד לאירועים פרטיים, ימי הולדת ומסיבות קיץ.</li>
+                <li>מתאים גם לימי הולדת בגינה הפרטית וגם לימי הולדת בחוץ.</li>
+                <li>המתקן כולל מגלשה רחבה וגבוהה, הניתנת לשימוש עם או בלי מים, המבטיחה שעות של הנאה לילדים.</li>
+                <li>המתנפח משלב בתוכו בריכת מים ותותח מים מובנה, שמוסיפים מימד של הרפתקה לכל שימוש בו.</li>
+                <li>המוצר מגיע ארוז בתיק קל לנשיאה, כולל מפוח עוצמתי לניפוח מהיר.</li>
+                <li>למתנפח מצורפות יתדות עגינה לקרקע לשימוש יציב ובטוח.</li>
+                <li>המתנפח עשוי מחומרים עמידים ואיכותיים, המיועדים לעמוד בתנאי חוץ ולספק חוויה בטוחה ונטולת דאגות.</li>
+            </ul>
+        </div>
+
+        <!-- Image Card -->
+        <div class="image-card">
+            <img src="https://i.ibb.co/PrksDbm/image.webp" alt="מתנפח מים מגלשה">
+        </div>
+
+        <!-- Video Card -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/816nIanyh0E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Product Instructions -->
+        <div class="instructions">
+            <h2>הוראות הפעלה</h2>
+            <ul>
+                <li>יש לפרוס את המתנפח על שטח ישר ומפולס, נקי מחפצים חדים, אבנים, או עצמים שעלולים לפגוע בו. וודאו שהמקום רחב מספיק לפעילות נוחה ובטוחה.</li>
+                <li>חברו את פתח האוויר של המתנפח למפוח באמצעות הרצועות הייעודיות, והדקו את החיבור בצורה בטוחה. ודאו שהמפוח ממוקם באופן יציב הרחק מאזור המשחק.</li>
+                <li>לפני הניפוח, ודאו שכל פתחי הניקוז של המים במתנפח, הן בבריכה והן במגלשה, סגורים כהלכה כדי למנוע דליפת מים במהלך השימוש.</li>
+                <li>הפעילו את המפוח וחכו עד שהמתנפח יתמלא באוויר לגמרי ויעמוד בצורה יציבה. אין להשתמש במתנפח לפני שהוא ניפח לחלוטין.</li>
+                <li>אם ברצונכם להשתמש במתנפח עם מים, חברו את צינורות המים לפי ההוראות המסומנות על גבי המתקן. ודאו שהצנרת מחוברת היטב לברזים (ברז כפול בחלק העליון וברז יחיד לתותח המים).</li>
+                <li>חברו את יתדות העגינה לקרקע דרך הלולאות הייעודיות הממוקמות בבסיס המתנפח. יש להבטיח כי כל היתדות מחוברות היטב כדי לשמור על יציבות המתקן במהלך השימוש.</li>
+                <li>יש לוודא כי המתקן יציב, וכל הצנרת והחיבורים מהודקים במלואם לפני תחילת השימוש. במקרה של שימוש במים, וודאו שכל החיבורים אינם דולפים.</li>
+                <li>עם סיום השימוש, נתקו את המפוח וכבו את מערכת המים (אם בשימוש). וודאו שהמתנפח מתייבש לחלוטין לפני קיפולו ואחסונו כדי למנוע רטיבות ועובש.</li>
+            </ul>
+        </div>
+
+        <!-- Button container for two buttons -->
+        <div class="button-container">
+            <a href="index.html" class="button">חזרה לעמוד הבית</a>
+            <a href="pricing.html" class="button">חזרה למחירון</a>
+        </div>
+    </div>
+
+</body>
+</html>

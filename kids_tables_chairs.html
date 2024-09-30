@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שולחנות וכיסאות ילדים</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-image: url('https://i.ibb.co/Z8Zdd5F/JUMPY-JOY-LOGO.jpg'); /* רקע */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95); /* שקיפות עדינה */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ff5733;
+            font-size: calc(2rem + 1vw);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .product-card .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            text-align: justify;
+            padding-right: 20px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+
+        .image-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            height: 500px; /* גודל קבוע */
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .instructions {
+            background-color: #e3f2fd; /* צבע רקע עדין */
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .instructions h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .instructions ul {
+            list-style-type: disc;
+            padding-right: 20px;
+        }
+
+        .instructions ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>שולחנות וכיסאות ילדים</h1>
+
+        <div class="product-card">
+            <p class="title">
+                שולחנות וכיסאות ילדים – פתרון מושלם לפעילויות ואירועים
+            </p>
+            <ul>
+                <li>שולחנות וכיסאות מותאמים במיוחד לילדים.</li>
+                <li>כל שולחן מתאים ל-4 ילדים, עם עיצוב נוח ובטיחותי.</li>
+                <li>פתרון מצוין לפעילויות יצירה, ארוחות ומשחקים באירועים וימי הולדת.</li>
+                <li>עשויים מחומרים עמידים, קלים לניקוי ומתאימים לשימוש חיצוני או פנימי.</li>
+            </ul>
+        </div>
+
+        <!-- Image Card -->
+        <div class="image-card">
+            <img src="https://i.ibb.co/fdGrnrc/image.jpg" alt="שולחנות וכיסאות ילדים">
+        </div>
+
+        <!-- Product Instructions -->
+        <div class="instructions">
+            <h2>הוראות הפעלה</h2>
+            <ul>
+                <li>יש להניח את השולחנות והכיסאות על משטח ישר ויציב.</li>
+                <li>ודאו שהכיסאות מסודרים בצורה בטיחותית סביב השולחנות.</li>
+                <li>לאחר סיום השימוש, יש לנקות את השולחנות והכיסאות ולהחזירם למקום האיסוף כפי שסוכם בהשכרה.</li>
+            </ul>
+        </div>
+
+        <!-- Button container for two buttons -->
+        <div class="button-container">
+            <a href="index.html" class="button">חזרה לעמוד הבית</a>
+            <a href="pricing.html" class="button">חזרה לעמוד המחירון</a>
+        </div>
+    </div>
+
+</body>
+</html>
